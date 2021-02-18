@@ -1,5 +1,6 @@
 # Comunidad IT
-## Desarrollo de aplicaciones web con HTML, CSS, JavaScript, Node.js & MongoDB
+## Desarrollo de aplicaciones web con Node.js
+Desarrollo de web apps utilizando HTML, CSS, Javascript, Node.js y MongoDB.
 
 ---
 
