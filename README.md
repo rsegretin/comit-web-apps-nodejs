@@ -12,5 +12,17 @@ Desarrollo de web apps utilizando HTML, CSS, Javascript, Node.js y MongoDB.
 
 * [¿Qué es?](contenido/2-internet.md#qué-es)
 * [Historia](contenido/2-internet.md#historia)
-* [Conceptos de comunicación y redes](<contenido/2-internet.md#Conceptos de comunicaciones y redes>)
+* [Conceptos de comunicación y redes](contenido/2-internet.md#conceptos-de-comunicaciones-y-redes)
 * [Videos](contenido/2-internet.md#videos)
+
+### Introducción a HTML
+* [¿Qué es HTML?](contenido/3-html-1.md#qué-es-html)
+* [Estructura](contenido/3-html-1.md#estructura)
+* [Primeros elementos](contenido/3-html-1.md#primeros-elementos)
+* [Listas](contenido/3-html-1.md#listas)
+
+### Introducción a CSS
+* [¿Qué es CSS y para qué sirve?](contenido/4-css-1.md)
+* [¿Cómo seleccionar elementos y definir el color de texto?](contenido/4-css-1.md)
+* [Colores](contenido/4-css-1.md)
+* [¿Cómo agregar CSS?](contenido/4-css-1.md)
