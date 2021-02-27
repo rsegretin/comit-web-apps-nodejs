@@ -23,6 +23,6 @@ Desarrollo de web apps utilizando HTML, CSS, Javascript, Node.js y MongoDB.
 
 ### Introducción a CSS
 * [¿Qué es CSS y para qué sirve?](contenido/4-css-1.md#qué-es-css-y-para-qué-sirve)
-* [Colores en CSS](contenido/4-css-1#colores-en-css.md)
+* [Colores en CSS](contenido/4-css-1.md#colores-en-css)
 * [Dónde aplicar el código CSS](contenido/4-css-1.md#dónde-aplicar-el-código-css)
 * [Más características de CSS](contenido/4-css-1.md#más-características-de-css)
