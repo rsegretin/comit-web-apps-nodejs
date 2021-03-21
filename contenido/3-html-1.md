@@ -445,3 +445,214 @@ Existen algunas etiquetas de HTML que nos permiten describir porciones del texto
 
 #### Práctica
 [Ejercicio 8](../ejercicios/consignas/html/ej08.md)
+
+### Atributos de los elementos
+* Los elementos en HTML pueden tener atributos que nos sirven para describirlo mejor, agregar funcionalidad o alterar su comportamiento.
+* El atributo **id** nos permite identificar de forma única un elemento dentro del documento. (Sólo deberíamos tener un elemento de este tipo por documento, ejemplo: Un título principal con el id: titulo)
+* El atributo class nos permite establecer a que clase de CSS pertenece un elemento. De esta forma podemos agrupar elementos por la forma que se ven o comportan. (Podemos utilizar la misma clase en varios elementos)
+
+Ejemplo usando ID y class
+```html
+<tipoDeEtiqueta id="titulo-principal" class="rojo"></tipoDeEtiqueta>
+```
+
+## Hipervínculos
+* Podemos vincular documentos utilizando hipervínculos
+* La etiqueta **a** establece un nuevo vínculo
+* Por medio del atributo **href** podemos vincular documentos
+* El atributo **href** acepta una dirección absoluta, relativa o un email como valor y define de que tipo de hipervínculo es
+* Entre la etiqueta de apertura y cierre ponemos el contenido del link
+* Como contenido podemos poner una imágen y así generar otro efecto visual
+
+**Ejemplo:**
+```html
+<a href="#">Contenido de mi link</a>
+```
+
+### Link externo
+* Utilizando una ruta externa como atributo **href** podemos relacionar nuestro documento con un sitio exterior.
+
+**Ejemplo:**
+```html
+<a href="http://google.com">Buscar</a>
+```
+
+### Links con rutas absolutas y relativas
+* Para definir el atributo href podemos utilizar una ruta absoluta o relativa.
+* Ruta absoluta se llama cuando utilizamos la ruta completa al documento. Puede ser local o de un sitio externo.
+
+**Ejemplo:**
+```html
+<a href="http://yahoo.com">Abrir Yahoo</a>
+<a href="c:\Usuarios\mi_nombre\mi_cv.pdf">Mirá mi CV</a>
+```
+
+* Podemos relacionar los documentos utilizando una ruta relativa.
+* Este tipo de rutas está definida por la relación que tienen los documentos
+* Podemos utlizar el concepto que utilizamos desde la consola para entrar y salir de una carpeta
+* Para acceder a la raíz del sitio podemos utilizar **/**
+
+**Ejemplo:**
+```html
+<a href="/">Volver a Home</a>
+```
+
+* Si tenemos 2 archivos que estan al mismo nivel podemos utilizar el nombre de los mismos como vínculo.
+
+![Archivos relativos](../assets/html/link_relativo.png)
+
+**Ejemplo:**
+```html
+En index.html:
+<a href="about.html">Sobre Mi</a>
+
+En about.html:
+<a href="index.html">Sobre Mi</a>
+```
+
+* Podemos relacionar un archivo que esta dentro de una carpeta utilizando el nombre de la **carpeta/nombre del archivo**
+* También podemos establecer relación desde el archivo que esta dentro de la carpeta con uno que esta afuera utilizando **../** tantas veces como niveles de profundidad que tenga que salir
+
+![Archivos relativos](../assets/html/link_relativo2.png)
+
+**Ejemplo:**
+```html
+En index.html:
+<a href="about/about.html">Sobre Mi</a>
+
+En about/about.html:
+<a href="../index.html">Sobre Mi</a>
+```
+
+### Atributo target
+* Por medio del atributo **target** que tienen los hipervinculos y el valor **_blank** podemos establecer que queremos que ese documento se abra en una ventana nueva
+* Los browsers actuales pueden abrir este documento en un tab nuevo si el browser lo soporta.
+
+**Ejemplo:**
+```html
+<a href="http://comunidadit.org" target="_blank">Comunidad IT</a>
+```
+
+## Link de mail
+* En el atributo **href** podemos establecer un tipo de valor especial **mailto** para decirle al browser que queremos abrir algún programa de envío de mail que esté instalado en el cliente
+* Utilizamos el valor **mailto:dirección@gmail.com** para establecer cual es el mail que queremos utilizar
+
+```html
+<a href="mailto:pepe@gmail.com">Contacto</a>
+```
+
+### Punto de anclaje
+* Utilizando el concepto de punto de anclaje podemos navegar a una sección del documento utilizando un link.
+* Al utilizar un punto de anclaje el browser se sitúa en la posición donde encuentre dicho punto.
+* Para esto utilizamos un elemento hipervínculo **a** con el atributo **name** que queremos utilizar como anclaje.
+
+**Ejemplo**
+```html
+Definimos el anclaje en un documento
+<a name="noticias"></a>
+
+Desde el mismo documento podemos utilizar:
+<a href="#noticias">Ir a la sección noticias</a>
+
+Desde otro archivo:
+<a href="archivo.html#noticias">Ir a la sección noticias</a>
+```
+
+#### Práctica
+[Ejercicio 9](../ejercicios/consignas/html/ej09.md)
+
+[Ejercicio 10](../ejercicios/consignas/html/ej10.md)
+
+[Ejercicio 11](../ejercicios/consignas/html/ej11.md)
+
+[Ejercicio 12](../ejercicios/consignas/html/ej12.md)
+
+[Ejercicio 13](../ejercicios/consignas/html/ej13.md)
+
+[Ejercicio 14](../ejercicios/consignas/html/ej14.md)
+
+[Ejercicio 15](../ejercicios/consignas/html/ej15.md)
+
+## Creando sitios
+
+### Medium
+* Vamos a crear un sitio similar a [Medium](https://medium.com/) con todo lo que vimos hasta este momento.
+
+#### Práctica
+[Sitio 1](../ejercicios/consignas/html/sitio01/sitio01.md)
+
+
+## Imagenes
+* En HTML podemos utilizar la etiqueta **img** como contenedor de una imagen
+* Dado que no tiene contenido es un tipo de etiqueta que tiene apertura y cierre en una sola etiqueta
+* Para establecer el contenido del contenedor utilizamos el atributo **src** que significa source o fuente
+* Esta etiqueta es un elemento en linea es decir que podemos poner uno al lado del otro
+* Por defecto el contenedor va a tomar el tamaño original de la imagen
+* Al trabajar en web siempre tratamos de optimizar las imagenes para que pesen lo menos posible
+* Encontramos diferentes tipos de imagenes: [jpg](https://es.wikipedia.org/wiki/Joint_Photographic_Experts_Group), [png](https://es.wikipedia.org/wiki/Portable_Network_Graphics) y [gif](https://es.wikipedia.org/wiki/Graphics_Interchange_Format) entre otras
+* [Optimización de la imagen - Developers Google](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization?hl=es-419)
+
+**Ejemplo**
+```html
+<img src="mifoto.jpg" />
+```
+
+* En el atributo **src** acepta tanto rutas absolutas como relativas 
+
+**Ejemplo**
+```html
+Imagenes con rutas relativas:
+<img src="imagenes/mifoto.jpg" />
+
+Salgo de una carpeta, entro a la carpeta imágenes y busco el archivo mifoto.jpg
+<img src="../imagenes/mifoto.jpg" />
+
+Imagen con ruta absoluta:
+<img src="http://images6.fanpop.com/image/photos/39500000/il-570xN-917420114-2kdu-rick-and-morty-39567961-300-370.jpg" />
+```
+
+* Utilizando los atributos **height** para la altura y **width** para el ancho podemos establecer el tamaño que queremos que tenga el contenedor. 
+* Si no utilizamos bien las proporciones podemos hacer que la imagen se vea mal
+* Podemos establecer un número como valor de estos atributos y la unidad de medida es en pixel
+
+```html
+<img src="mifoto.jpg" height="300" width="300" />
+```
+* El atributo alt nos permite establecer un texto que describa la imagen.
+* Este atributo lo utilizan los lectores de pantalla o es el mensaje que vemos cuando no se puede cargar la imagen
+* Es una buena práctica describir nuestras imagenes con este atributo
+
+**Ejemplo:**
+```html
+<img src="programando.jpg" alt="En esta foto estoy programando" />
+```
+
+* También existe un atributo llamado **title** que nos permite agregar más información sobre la imagen
+* Algunos browsers muestran un cartelito o tooltip al pasar el mouse sobre la imagen
+
+**Ejemplo:**
+```html
+<img src="programando.jpg" title="Soy super ñoño!!!"  />
+```
+
+#### Práctica
+[Ejercicio 16](../ejercicios/consignas/html/ej16.md)
+
+### Foto con detalle
+* Muchas veces necesitamos mostrar una imagen con un detalle, para esto HTML5 incorpora los elementos **figure** y **figcaption**
+* Como contenido de **figure** podemos poner una imagen o más imagenes
+* Utilizamos **figcaption** para establecer el detalle de la/s imagen/es
+* Con varios de estos elementos podemos crear una especie de galería de imagenes
+* Los browsers más viejos no saben renderizar estos elementos y simplemente muestran el contenido
+* Para saber el nivel de soporte de HTML5 de nuestro browser podemos utilizar el siguiente [sitio](https://html5test.com)
+
+**Ejemplo:**
+```html
+<figure>
+  <img src="programando.png">
+  <figcaption>Programando como un campeón</figcaption>
+</figure>
+```
+
+#### Práctica
+[Ejercicio 17](../ejercicios/consignas/html/ej17.md)
