@@ -45,5 +45,5 @@ Desarrollo de web apps utilizando HTML, CSS, Javascript, Node.js y MongoDB.
 * [Propiedades y métodos de string](contenido/6-js1.md#)
 
 ### JavaScript - Parte II
-* [Array](contenido/7-js1.md#)
-* [Estructuras de control](contenido/7-js1.md#)
+* [Array](contenido/7-js2.md#)
+* [Estructuras de control](contenido/7-js2.md#)
